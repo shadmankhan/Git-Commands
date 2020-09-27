@@ -63,18 +63,25 @@ Step1. $ git add file_name 		<-- [to select the file you want to share]
 Step2. $ git commit -m "commit message"	<-- [To record/save a selected file with a msg / commit is to save the file / -m : for msg]
 
 Step3. ## Adding a Remote
-	-
-	-
-	-
-
-	## Register a remote
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+The git remote add command takes two arguments:
+	- [] A remote name, for example, origin
+	- [] A remote URL, for example, https://github.com/user/repo.git
+	
+	## Set a new remote
 	$ git remote add remote_name URL
+	Example: $ git remote add origin https://github.com/user/repo.git
+	
+	## Verify new remote
+	$ git remote -v
+	> origin  https://github.com/user/repo.git (fetch)
+	> origin  https://github.com/user/repo.git (push)
 
 	## Now upload files to remote
 	$ git push remote_name master	<-- [push is used to upload files to the remote]
 
-  ## Downloading Files from a Remote
-  $ git pull remote_name master			<-- [pull is used for downloading files from remote]
+  	## Downloading Files from a Remote
+  	$ git pull remote_name master			<-- [pull is used for downloading files from remote]
 ```
 
 ## Important Points About Git#
